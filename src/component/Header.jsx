@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <header>
+    <header className="bg-[#6c63ff] text-white">
       <nav>
         <div className="">
-          <div className="flex justify-between h-16 px-10 shadow items-center">
+          <div className="flex justify-between h-16 px-5 md:px-10 shadow items-center">
             <div className="flex items-center space-x-8">
               <Link
                 to="/"
-                className="text-xl lg:text-2xl font-bold cursor-pointer"
+                className="text-4xl lg:text-2xl font-bold cursor-pointer"
               >
                 GatherHub
               </Link>

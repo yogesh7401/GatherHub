@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 export default function LandingPage() {
   return (
     <div className="min-h-[calc(100vh-64px)] container mx-auto">
-      <div className="grid grid-cols-2 min-h-[calc(100vh-64px)] ">
-        <div className="my-auto">
+      <div className="md:grid grid-cols-2 min-h-[calc(100vh-64px)] ">
+        <div className="my-auto py-10 px-5">
           <h1 className="text-4xl font-semibold leading-tight">
             Effortless Data Collection with Our Customizable Form Builder
           </h1>
-          <p className="mt-3 text-xl">
+          <p className="mt-3 text-xl text-gray-500">
             Welcome to <span>GatherHub</span>, where collecting and managing
             data is made easy. Whether you're an educator, nonprofit, or event
             organizer, our intuitive form builder empowers you to gather
@@ -17,17 +17,16 @@ export default function LandingPage() {
           <br />
           <Link
             to="/form-builder"
-            className="bg-indigo-600 px-4 py-2 rounded text-white hover:bg-indigo-500 text-lg"
+            className="bg-indigo-600 px-4 py-2 rounded text-white hover:bg-indigo-500"
           >
             Create your form now
           </Link>
         </div>
-        <div className="m-auto">
+        <div className="m-auto py-10 px-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             dataName="Layer 1"
-            width="500"
-            height="400"
+            className="md:w-[400px] lg:w-[500px] lg:h-[400px]"
             viewBox="0 0 777.69685 613.28514"
           >
             <path

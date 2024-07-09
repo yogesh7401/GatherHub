@@ -5,7 +5,6 @@ export default function TitleCard({ title, setTitle }) {
   function handleChange(event) {
     let name = event.target.name;
     let value = event.target.value;
-    console.log(name, value);
     setTitle({
       ...title,
       [name]: value,
@@ -34,19 +33,24 @@ export default function TitleCard({ title, setTitle }) {
       </div>
       {/* Title & Description*/}
       <div className="mt-5">
-        <p className="text-gray-700 required">Title</p>
+        <label htmlFor="title" className="text-gray-700 font-bold required">
+          Title
+        </label>
         <Input
+          id="title"
           name="name"
-          className="text-xl focus:outline-none mb-3"
+          className="text-[16px] focus:outline-none mb-3"
           value={title.name}
           type="text"
           onChange={e => handleChange(e)}
         />{' '}
         <br />
-        <p className="text-gray-700">Description</p>
+        <label htmlFor="desc" className="text-gray-700 font-bold">
+          Description
+        </label>
         <TextArea
+          id="desc"
           placeholder="Description"
-          className="text-lg"
           name="description"
           value={title.description}
           onChange={e => handleChange(e)}
